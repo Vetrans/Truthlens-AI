@@ -9,7 +9,8 @@ from email.policy import default
 from backend.utilities.text_extractor import extract_text_from_bytes
 from backend.analysis.pipeline import run_analysis_pipeline
 
-PORT = 8000
+# Dynamically grab the port from the cloud provider, or default to 8000 locally
+PORT = int(os.environ.get("PORT", 8000))
 current_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(current_dir, ".."))
 frontend_dir = os.path.join(project_root, "frontend")
