@@ -1,0 +1,155 @@
+# Sample High-Risk Terms & Conditions (For Testing Purposes Only)
+
+**Disclaimer:** This is a fictional Terms & Conditions document created solely for testing legal document analyzers and risk-detection software. It does not represent the policies of any real company.
+
+---
+
+# Terms & Conditions
+
+## 1. Acceptance of Terms
+
+By accessing, downloading, installing, registering for, or otherwise using the Service ("Service"), you acknowledge that you have read, understood, and irrevocably agree to these Terms and Conditions. If you do not agree to every provision contained herein, you must immediately discontinue use of the Service. Continued access or use of the Service constitutes your unconditional acceptance of all current and future versions of these Terms.
+
+---
+
+## 2. Changes to These Terms
+
+We reserve the right to change these Terms, our Privacy Policy, and any related policies at any time without notice. It is solely your responsibility to check this page periodically for updates. Continued use of the Service after changes become effective constitutes your acceptance of those changes, regardless of whether you have reviewed them.
+
+---
+
+## 3. Collection and Sharing of Personal Information
+
+You authorize us to collect, store, process, transfer, disclose, and share your personal information, contact information, device information, browsing activity, and usage history with our affiliates, advertisers, analytics providers, marketing partners, business partners, service providers, and other third parties. Such information may be used for advertising, product development, research, profiling, commercial purposes, and other lawful business activities. You acknowledge that your data may be transferred internationally without additional notice.
+
+---
+
+## 4. Sale of User Data
+
+We may sell personal information, user data, contact information, demographic information, browsing behavior, and other collected information to advertisers, marketing partners, affiliates, and data brokers. By using the Service, you expressly consent to such sale and transfer of your information.
+
+---
+
+## 5. Cookies and Tracking Technologies
+
+The Service uses cookies, web beacons, tracking pixels, device identifiers, browser fingerprinting, and similar technologies to track your browsing activity, preferences, interactions, clicks, search history, purchases, and online behavior. These technologies may continue operating across different websites and applications.
+
+---
+
+## 6. Device Information
+
+We collect information regarding your device model, operating system, browser type, hardware configuration, IP address, MAC address, network identifiers, installed applications, language preferences, and diagnostic information. Such information may be combined with other datasets to improve advertising accuracy and service optimization.
+
+---
+
+## 7. Location Tracking
+
+You consent to our collection of location data, GPS information, precise location, geographic movement, and background location data whenever permitted by your device settings. We may continue to track your location even when the application is not actively in use.
+
+---
+
+## 8. Data Retention
+
+We may retain your personal information indefinitely and may keep your data after account closure or termination for any duration we determine appropriate. Backup copies, archived records, and analytical datasets may also be retained permanently.
+
+---
+
+## 9. Subscription Services
+
+Certain portions of the Service operate on a recurring subscription basis. Your subscription will automatically renew at the end of each billing period unless canceled in advance. By subscribing, you authorize recurring charges to your selected payment method.
+
+---
+
+## 10. Billing Changes
+
+We reserve the right to change pricing, subscription costs, service fees, taxes, processing fees, and billing structures at our sole discretion without notice. Revised pricing becomes effective immediately upon publication.
+
+---
+
+## 11. Refund Policy
+
+All purchases are non-refundable. No refunds will be provided for subscriptions, renewals, upgrades, digital products, premium services, partially used billing periods, or accidental purchases. All sales are final.
+
+---
+
+## 12. Intellectual Property
+
+All content, trademarks, logos, software, graphics, documentation, algorithms, databases, and proprietary materials remain our exclusive property. Users receive only a limited, revocable license to access the Service.
+
+---
+
+## 13. User Conduct
+
+Users agree not to misuse the Service, interfere with operations, reverse engineer software, exploit vulnerabilities, automate access without permission, or violate applicable laws. We may determine violations entirely at our sole discretion.
+
+---
+
+## 14. Suspension and Termination
+
+We may suspend your account, terminate your access, restrict functionality, or permanently disable your account at any time without notice, with or without cause, and entirely at our sole discretion. We are under no obligation to explain the reason for suspension or termination.
+
+---
+
+## 15. Removal of Content
+
+We reserve the right to remove content, delete profiles, erase uploaded files, or permanently delete user accounts without warning and without liability. Users are solely responsible for maintaining independent backups of all information submitted to the Service.
+
+---
+
+## 16. Governing Law
+
+These Terms shall be governed by the laws of the State of Delaware. Any legal dispute shall be brought exclusively before the courts of Delaware, and you consent to the exclusive jurisdiction of those courts.
+
+---
+
+## 17. Binding Arbitration
+
+Any dispute arising out of or relating to the Service shall be resolved exclusively through binding arbitration. You agree to arbitrate all claims individually and waive your right to a jury trial or court process.
+
+---
+
+## 18. Class Action Waiver
+
+You expressly waive any right to participate in a class action lawsuit, class arbitration, representative proceeding, or consolidated legal action. All disputes must be pursued individually.
+
+---
+
+## 19. Limitation of Liability
+
+To the fullest extent permitted by law, we shall not be liable for indirect, incidental, consequential, punitive, exemplary, or special damages, including loss of profits, business interruption, data loss, or reputational harm arising from your use of the Service.
+
+---
+
+## 20. Disclaimer of Warranties
+
+The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express, implied, statutory, or otherwise. We disclaim all warranties of merchantability, fitness for a particular purpose, accuracy, availability, and non-infringement.
+
+---
+
+## 21. Indemnification
+
+You agree to defend, indemnify, and hold harmless the Company, its officers, directors, employees, affiliates, partners, contractors, licensors, and successors from any claims, damages, liabilities, losses, costs, or expenses arising from your use of the Service or violation of these Terms.
+
+---
+
+## 22. Third-Party Services
+
+The Service may integrate with third-party providers whose services are governed by their own terms and privacy policies. We are not responsible for their actions, security practices, or content.
+
+---
+
+## 23. Communications
+
+You consent to receive promotional emails, marketing communications, product announcements, surveys, and advertising messages. You acknowledge that some communications may continue after account closure where permitted by applicable law.
+
+---
+
+## 24. Entire Agreement
+
+These Terms constitute the complete agreement between you and the Company and supersede all previous understandings. If any provision is found unenforceable, the remaining provisions shall remain in full force and effect.
+
+---
+
+## 25. Final Acknowledgement
+
+By continuing to use the Service, you acknowledge that you have read, understood, and agreed to every provision contained within these Terms and Conditions, including provisions relating to automatic renewal, no refunds, sale of personal information, third-party disclosures, cookies, device identifiers, precise location tracking, account termination without notice, deletion of content, governing law, binding arbitration, and waiver of class-action rights. You further acknowledge that you assume all risks associated with your continued use of the Service.

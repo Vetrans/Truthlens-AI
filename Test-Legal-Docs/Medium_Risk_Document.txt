@@ -1,0 +1,149 @@
+# Sample Medium-Risk Terms & Conditions (For Testing Purposes Only)
+
+**Disclaimer:** This document is fictional and created solely for testing legal document analysis systems. It does not represent the policies of any real organization.
+
+---
+
+# Terms & Conditions
+
+## 1. Introduction
+
+Welcome to our Service. These Terms and Conditions explain the rights and responsibilities of both users and the Company. By accessing or using the Service, you agree to comply with these Terms. If you disagree with any provision, you should discontinue use of the Service.
+
+---
+
+## 2. Account Registration
+
+Some features require an account. You agree to provide accurate information during registration and to keep your account credentials secure. You are responsible for all activities performed through your account.
+
+---
+
+## 3. Changes to the Terms
+
+We may change these Terms or our Privacy Policy from time to time to reflect improvements, legal obligations, or new features. While we generally try to notify users of significant updates, some changes may become effective immediately. It is your responsibility to check this page periodically for changes.
+
+---
+
+## 4. Privacy
+
+We value your privacy and collect only information necessary to provide and improve the Service. We do not intentionally sell your personal information. Information may be shared with carefully selected service providers that assist in operating the platform under contractual confidentiality obligations.
+
+---
+
+## 5. Information We Collect
+
+We collect information such as your name, email address, account preferences, browser type, operating system, device model, IP address, and language settings. This information helps us improve performance, diagnose technical issues, and enhance security.
+
+---
+
+## 6. Cookies
+
+The Service uses cookies and similar technologies to remember your preferences, improve website functionality, analyze performance, and provide personalized experiences. You may manage cookie preferences through your browser settings, although disabling some cookies may reduce functionality.
+
+---
+
+## 7. Location Information
+
+If you enable location services, we may collect approximate location data to provide location-based features such as local recommendations or regional content. You may disable location permissions through your device settings at any time.
+
+---
+
+## 8. Data Security
+
+We implement reasonable administrative, technical, and physical safeguards to protect your personal information. Although we continuously improve our security measures, no online system can guarantee complete protection against every possible security incident.
+
+---
+
+## 9. Data Retention
+
+We retain your information only for as long as reasonably necessary to operate the Service, comply with legal obligations, resolve disputes, and enforce our agreements. Users may request deletion of their accounts, subject to applicable legal requirements.
+
+---
+
+## 10. User Responsibilities
+
+You agree not to misuse the Service, distribute malicious software, interfere with system operations, or violate applicable laws. Users are expected to behave respectfully toward other members of the community.
+
+---
+
+## 11. Subscription Plans
+
+Certain features require payment. Subscription prices, billing periods, and renewal information will be clearly displayed before purchase. You may cancel your subscription before the next billing cycle to avoid future charges.
+
+---
+
+## 12. Pricing Changes
+
+We reserve the right to change subscription pricing, service fees, or premium feature costs to reflect changes in operating expenses or new offerings. Whenever reasonably possible, we will provide advance notice before updated pricing becomes effective for existing subscribers.
+
+---
+
+## 13. Refund Policy
+
+Refund requests are evaluated individually according to our published refund guidelines. Refund eligibility depends on the nature of the purchase, the amount of service already provided, and applicable consumer protection laws.
+
+---
+
+## 14. Intellectual Property
+
+All software, trademarks, logos, graphics, documentation, and original content remain the intellectual property of the Company. Users receive a limited, non-transferable license to access and use the Service for personal purposes.
+
+---
+
+## 15. Third-Party Services
+
+The Service may integrate with third-party applications or websites. Those services operate under their own terms and privacy policies, and users are encouraged to review those documents before using third-party services.
+
+---
+
+## 16. Communications
+
+We may send important account notifications, billing reminders, security alerts, product updates, and optional promotional messages. Users may unsubscribe from marketing communications while continuing to receive essential service-related notifications.
+
+---
+
+## 17. Account Suspension
+
+If a user violates these Terms, we may temporarily suspend certain features or restrict account access while we investigate the issue. Whenever practical, users will be informed of the reason and given an opportunity to resolve the matter.
+
+---
+
+## 18. Account Termination
+
+Users may permanently delete their accounts at any time. The Company may terminate accounts involved in repeated or serious violations of these Terms after appropriate review. Where practical, users will receive notice before permanent termination.
+
+---
+
+## 19. Availability of Service
+
+We strive to maintain reliable availability but cannot guarantee uninterrupted operation. Scheduled maintenance or unexpected technical issues may occasionally affect access to the Service.
+
+---
+
+## 20. Limitation of Liability
+
+To the extent permitted by law, the Company shall not be responsible for indirect or consequential damages arising from temporary service interruptions, technical failures, or circumstances beyond our reasonable control. Nothing in these Terms limits consumer rights that cannot legally be excluded.
+
+---
+
+## 21. Governing Law
+
+These Terms shall be governed by the laws of the jurisdiction in which the Company is established. Any legal proceedings relating to these Terms should generally be brought before the competent courts of that jurisdiction unless applicable consumer protection laws provide otherwise.
+
+---
+
+## 22. Customer Support
+
+Our support team is available to answer questions regarding accounts, subscriptions, billing, or technical issues. We aim to respond to most inquiries within two business days.
+
+---
+
+## 23. Entire Agreement
+
+These Terms, together with our Privacy Policy and any additional service-specific agreements, constitute the complete agreement between you and the Company regarding use of the Service. If any provision is found unenforceable, the remaining provisions will continue in full effect.
+
+---
+
+## 24. Final Statement
+
+We are committed to operating a transparent and trustworthy platform. While certain operational policies—such as updates to these Terms, the use of cookies, limited device information collection, pricing adjustments, and applicable governing law—are necessary for running the Service, we also strive to provide users with reasonable notice, meaningful choices, and clear explanations whenever possible.

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthLens AI - Terms & Conditions Analyzer</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+<body>
+    <!-- Premium Floating Aurora Backdrop -->
+    <div class="aurora-container">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-scale-balanced logo-icon"></i>
+                <span class="logo-text">Truth<span class="logo-accent">Lens</span><span class="logo-badge">AI</span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <!-- SECTION 1: LANDING & WORKSPACE PAGE -->
+        <section id="landing-page" class="view-section active">
+            <div class="hero-section">
+                <h1 class="hero-title">Because Nobody Reads <br><span class="gradient-text">Terms & Conditions</span></h1>
+                <p class="hero-subtitle">Instantly analyze legalese, expose dangerous clauses, calculate hidden risks, and understand your rights in plain English before checking "I Agree."</p>
+            </div>
+
+            <!-- Upload and Paste Input Card -->
+            <div class="input-workspace">
+                <div class="input-card">
+                    <!-- Tab Navigation -->
+                    <div class="tabs-header">
+                        <button class="tab-btn active" id="tab-paste" onclick="switchInputTab('paste')">
+                            <i class="fa-solid fa-keyboard tab-icon"></i>Paste Agreement
+                        </button>
+                        <button class="tab-btn" id="tab-upload" onclick="switchInputTab('upload')">
+                            <i class="fa-solid fa-file-arrow-up tab-icon"></i>Upload Document
+                        </button>
+                    </div>
+
+                    <!-- Paste Text Panel -->
+                    <div class="tab-content active" id="content-paste">
+                        <textarea id="terms-textarea" placeholder="Paste the full Terms & Conditions or Privacy Policy here (minimum 50 characters)..."></textarea>
+                    </div>
+
+                    <!-- File Drag-and-Drop Panel -->
+                    <div class="tab-content" id="content-upload">
+                        <div class="drag-drop-zone" id="drop-zone">
+                            <input type="file" id="file-input" accept=".txt,.pdf,.docx" style="display: none;">
+                            <i class="fa-solid fa-cloud-arrow-up upload-huge-icon"></i>
+                            <h3>Drag & drop your legal file here</h3>
+                            <p>Supports PDF, DOCX, or TXT formats (Max 15MB)</p>
+                            <button class="btn btn-secondary" onclick="document.getElementById('file-input').click()">Browse Files</button>
+                            <div class="selected-file-display" id="selected-file-info" style="display: none;">
+                                <i class="fa-solid fa-file-lines text-teal"></i>
+                                <span id="selected-file-name">filename.pdf</span>
+                                <button class="btn-clear-file" onclick="clearSelectedFile(event)"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions & Error display -->
+                    <div class="workspace-footer">
+                        <div class="error-banner" id="input-error" style="display: none;">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span id="error-message">Error details go here.</span>
+                        </div>
+                        <button class="btn btn-primary btn-huge" id="btn-analyze" onclick="startAnalysis()">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Contract
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SCANNING & LOADING OVERLAY -->
+        <section id="loading-page" class="view-section">
+            <div class="loading-container">
+                <!-- Laser Scanning Circle -->
+                <div class="scanner-container">
+                    <div class="scanner-circle">
+                        <i class="fa-solid fa-scale-unbalanced scanner-center-icon"></i>
+                        <div class="scanner-laser"></div>
+                    </div>
+                </div>
+                
+                <h2 class="loading-title">Analyzing Contract Clauses</h2>
+                <p class="loading-subtitle" id="loading-status-text">Extracting document text...</p>
+                
+                <!-- Pipeline Status Steps -->
+                <div class="loading-steps">
+                    <div class="step-item active" id="step-1"><span class="step-num">1</span> Text Extraction</div>
+                    <div class="step-item" id="step-2"><span class="step-num">2</span> NLP Classification</div>
+                    <div class="step-item" id="step-3"><span class="step-num">3</span> Risk Engine Evaluation</div>
+                    <div class="step-item" id="step-4"><span class="step-num">4</span> Weighted Calculations</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: METRICS RESULTS DASHBOARD -->
+        <section id="results-page" class="view-section">
+            <div class="results-layout">
+                
+                <!-- SIDEBAR - SCORES & READABILITY -->
+                <div class="results-sidebar">
+                    <button class="btn btn-back" onclick="backToLanding()">
+                        <i class="fa-solid fa-arrow-left"></i> Analyze New Document
+                    </button>
+
+                    <!-- RISK PROFILE GAUGE -->
+                    <div class="card glass-card text-center relative overflow-hidden">
+                        <h3 class="card-title">Overall Risk Profile</h3>
+                        
+                        <div class="gauge-wrapper">
+                            <svg class="gauge" viewBox="0 0 100 50">
+                                <path class="gauge-bg" d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke-linecap="round"></path>
+                                <path class="gauge-fill" id="gauge-fill-arc" d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke-linecap="round" stroke-dasharray="125.6" stroke-dashoffset="125.6"></path>
+                            </svg>
+                            <div class="gauge-center">
+                                <span class="gauge-value" id="risk-score-value">0.0</span>
+                                <span class="gauge-label" id="risk-score-label">Neutral</span>
+                            </div>
+                        </div>
+
+                        <div class="metrics-quick-grid">
+                            <div class="metric-quick-item">
+                                <span class="metric-quick-val text-orange" id="estimated-time">0m</span>
+                                <span class="metric-quick-lbl">Reading Time</span>
+                            </div>
+                            <div class="metric-quick-item border-left">
+                                <span class="metric-quick-val text-teal" id="reliability-score">0%</span>
+                                <span class="metric-quick-lbl">AI Confidence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REPORT EXECUTIVE SUMMARY -->
+                    <div class="card glass-card">
+                        <div class="card-header-icon">
+                            <i class="fa-solid fa-newspaper text-purple"></i>
+                            <h3 class="card-title m-0">Executive Summary</h3>
+                        </div>
+                        <div class="summary-body" id="executive-summary-text">
+                            Generating executive summary text...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN WORKSPACE - METRICS, CHARTS, AND DETAILS -->
+                <div class="results-main">
+                    
+                    <!-- 6 SCORING DIMENSIONS GRID -->
+                    <div class="category-cards-grid">
+                        <!-- PRIVACY CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('Privacy')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-red-opacity"><i class="fa-solid fa-eye-slash text-red"></i></span>
+                                <div class="category-title-info">
+                                    <h4>Privacy</h4>
+                                    <span class="badge-mini" id="cat-badge-Privacy">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-Privacy">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-red" id="cat-progress-Privacy" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Data collection, third-party sharing, tracking details, location permission policies.</p>
+                        </div>
+
+                        <!-- FINANCIAL CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('Financial')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-orange-opacity"><i class="fa-solid fa-credit-card text-orange"></i></span>
+                                <div class="category-title-info">
+                                    <h4>Financial</h4>
+                                    <span class="badge-mini" id="cat-badge-Financial">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-Financial">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-orange" id="cat-progress-Financial" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Billing parameters, recurring memberships, auto-renewal rates, and refund restrictions.</p>
+                        </div>
+
+                        <!-- LEGAL RIGHTS CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('Legal Rights')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-yellow-opacity"><i class="fa-solid fa-gavel text-yellow"></i></span>
+                                <div class="category-title-info">
+                                    <h4>Legal Rights</h4>
+                                    <span class="badge-mini" id="cat-badge-Legal Rights">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-Legal Rights">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-yellow" id="cat-progress-Legal Rights" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Dispute resolution methods, class-action waivers, liabilities, and intellectual properties.</p>
+                        </div>
+
+                        <!-- USER CONTROL CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('User Control')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-purple-opacity"><i class="fa-solid fa-sliders text-purple"></i></span>
+                                <div class="category-title-info">
+                                    <h4>User Control</h4>
+                                    <span class="badge-mini" id="cat-badge-User Control">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-User Control">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-purple" id="cat-progress-User Control" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Opt-out parameters, data export options, erasure configurations, notice before changes.</p>
+                        </div>
+
+                        <!-- SECURITY CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('Security')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-blue-opacity"><i class="fa-solid fa-shield-halved text-blue"></i></span>
+                                <div class="category-title-info">
+                                    <h4>Security</h4>
+                                    <span class="badge-mini" id="cat-badge-Security">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-Security">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-blue" id="cat-progress-Security" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Data transit encryptions, access credentials, breaches, and authentication guards.</p>
+                        </div>
+
+                        <!-- TRANSPARENCY CARD -->
+                        <div class="card glass-card hover-glow" onclick="scrollToCategory('Transparency')">
+                            <div class="category-header">
+                                <span class="category-icon-bg bg-teal-opacity"><i class="fa-solid fa-arrow-up-from-bracket text-teal"></i></span>
+                                <div class="category-title-info">
+                                    <h4>Transparency</h4>
+                                    <span class="badge-mini" id="cat-badge-Transparency">Low</span>
+                                </div>
+                                <span class="category-score" id="cat-score-Transparency">0.0</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-teal" id="cat-progress-Transparency" style="width: 0%"></div>
+                            </div>
+                            <p class="category-desc">Wording complexities, legal jargon density, sentence structure readability levels.</p>
+                        </div>
+                    </div>
+
+                    <!-- DETAILED CLAUSES LIST & CAROUSEL -->
+                    <div class="clause-analysis-section">
+                        <!-- Navigation Headers & Live Search -->
+                        <div class="clause-section-header">
+                            <h2>Detailed Clause Breakdowns</h2>
+                            <div class="filter-controls">
+                                <div class="search-input-wrapper">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" id="clause-search" placeholder="Search clauses..." oninput="filterClauses()">
+                                </div>
+                                <select id="severity-filter" onchange="filterClauses()">
+                                    <option value="all">All Severities</option>
+                                    <option value="Critical">Critical Only</option>
+                                    <option value="High">High & Critical</option>
+                                    <option value="Medium">Medium & Above</option>
+                                    <option value="Low">Low & Above</option>
+                                    <option value="Safe">Positive Protections</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- CAROUSEL HIGHLIGHTS PANEL -->
+                        <div class="highlights-container mb-4">
+                            <h3 class="subsection-title">Critical & High Risk Highlights</h3>
+                            <div class="carousel-wrapper">
+                                <div class="carousel-track" id="highlights-carousel">
+                                    <div class="carousel-slide empty-slide">
+                                        <p>No critical highlight clauses detected.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-controls" id="carousel-nav" style="display: none;">
+                                    <button class="carousel-btn prev" onclick="moveCarousel(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span class="carousel-indicator" id="carousel-indicator-text">1 / 1</span>
+                                    <button class="carousel-btn next" onclick="moveCarousel(1)"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DETECTED CLAUSE CARDS -->
+                        <div class="clause-cards-list" id="clause-cards-container">
+                            <!-- Populated via Javascript -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 TruthLens AI. Hackathon-Ready Legal Technology Analyzer. Running fully locally.</p>
+            <div class="footer-meta">
+                <span>Privacy First Architecture</span>
+                <span class="separator">|</span>
+                <span>Zero Cloud Storage</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="frontend/app.js" defer></script>
+</body>
+</html>
